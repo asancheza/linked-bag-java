@@ -21,7 +21,7 @@
  * Bag definition
  */
 public class LinkedBag<T> implements GenericBag<T> {
-  public Node<T> head;
+	public Node<T> head;
 
 	private int elementCount = 0;
 
@@ -30,10 +30,10 @@ public class LinkedBag<T> implements GenericBag<T> {
 		public Node<T> next;
 	}
 	/**
-   *
-   * Add element to the bag
-   *
-   */
+	 *
+   	 * Add element to the bag
+   	 *
+   	 */
 	public void add(T value) {
 		Node<T> node = new Node<T>();
 		node.data = value;
@@ -44,10 +44,10 @@ public class LinkedBag<T> implements GenericBag<T> {
 	}
 
 	/**
-   *
-   * Remove element from bag
-   *
-   */
+   	 *
+   	 * Remove element from bag
+	 *
+	 */
 	public void remove(T value) {
 		Node<T> currentNode = head;
 
@@ -62,11 +62,11 @@ public class LinkedBag<T> implements GenericBag<T> {
 	}
 
 	/**
-   *
-   * Contains element in the List
-   *
-   * @return true or false if the element is in the List
-   */
+   	 *
+   	 * Contains element in the List
+   	 *
+   	 * @return true or false if the element is in the List
+    	 */
 	public boolean contains(T value) {
 		Node<T> currentNode = head;
 
@@ -120,11 +120,11 @@ public class LinkedBag<T> implements GenericBag<T> {
 	}
 
 	/**
-   *
-   * Count elements in the List
-   *
-   * @return the number of elements in the List
-   */
+   	 *
+   	 * Count elements in the List
+   	 *
+   	 * @return the number of elements in the List
+   	 */
 	public int count(T value) {
 		Node<T> currentNode = head;
 		int count = 0;
